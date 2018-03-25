@@ -34,6 +34,37 @@ The following is the full list of available configuration options:
 ip_address # The static IP address of your speaker
 ```
 
+## Usage
+
+### Power Functions
+
+```ruby
+power = MusicCast::SetPower.new
+power.on       # Power on
+power.standby  # Standby
+power.toggle   # Power Toggle
+power.enable_auto_standby  # Enable Auto Power Standby
+power.disable_auto_standby # Disable Auto Power Standby
+```
+
+### Volume Commands
+
+```ruby
+volume = MusicCast::SetVolume.new
+volume.to(11)         # Set volume to n valid range 0..100
+volume.increment      # Increment volume by 1 step
+volume.increment(10)  # Increment volume by n steps
+volume.decrement      # Decrement volume by 1 step
+volume.decrement(10)  # Decrement volume by n steps
+```
+
+### Mute
+
+```ruby
+mute = MusicCast::SetMute.new
+mute.on  # Set Mute on
+mute.off # Set Mute off
+```
 
 ## Development
 
