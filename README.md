@@ -70,7 +70,7 @@ volume.decrement(10)  # Decrement volume by n steps
 
 ### Mute
 
-Enable or disable sound mute
+Enable or disable sound
 
 ```ruby
 mute = MusicCast::SetMute.new
