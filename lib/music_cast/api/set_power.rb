@@ -8,6 +8,8 @@ module MusicCast
       make_request('main/setPower?power=standby')
     end
 
+    alias_method :off, :standby
+
     def toggle
       make_request('main/setPower?power=toggle')
     end

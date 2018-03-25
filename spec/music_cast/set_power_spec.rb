@@ -25,6 +25,14 @@ RSpec.describe MusicCast::SetPower do
     end
   end
 
+  describe '#off' do
+    it 'is an alias of standby' do
+      off = set_power.method(:off)
+      standby = set_power.method(:standby)
+      expect(off).to eql(standby)
+    end
+  end
+
   describe '#toggle' do
     context 'successfully toggles the speaker power state', :vcr do
       it 'returns faraday response' do
