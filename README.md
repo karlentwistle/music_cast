@@ -20,6 +20,8 @@ Or install it yourself as:
 
 ## Configuration
 
+For the HTTP API to function correctly in an integrated system, the MusicCast devices must be on a fixed or bound IP Address. To avoid network loops through the wireless “extend” functionality of MusicCast products you should set the device to wired or wireless only - through the web GUI on the MusicCast device:
+
 The configuration options can be set by using the `configure` helper
 
 ```ruby
