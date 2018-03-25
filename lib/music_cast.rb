@@ -14,4 +14,5 @@ end
 
 require_relative 'music_cast/configuration'
 require_relative 'music_cast/api'
+require_relative 'music_cast/errors/request_error'
 require_relative 'music_cast/version'

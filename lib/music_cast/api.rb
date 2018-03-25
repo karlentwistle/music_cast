@@ -7,10 +7,24 @@ module MusicCast
       MusicCast.configuration
     end
 
-    def ip_address
-      configuration.ip_address
-    end
+    protected
+
+      def ip_address
+        configuration.ip_address
+      end
+
+      def make_request(path)
+        request = Faraday.get("http://#{ip_address}/YamahaExtendedControl/v1/#{path}")
+        response_code = JSON.parse(request.body).fetch('response_code')
+
+        if response_code == 0
+          request
+        else
+          raise RequestError, response_code
+        end
+      end
   end
 end
 
 require_relative 'api/set_power'
+require_relative 'api/set_volume'
