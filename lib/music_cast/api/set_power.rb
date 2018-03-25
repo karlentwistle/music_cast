@@ -19,18 +19,5 @@ module MusicCast
     def disable_auto_standby
       make_request('system/setAutoPowerStandby?enable=false')
     end
-
-    private
-
-    def make_request(path)
-      request = Faraday.get("http://#{ip_address}/YamahaExtendedControl/v1/#{path}")
-      response_code = JSON.parse(request.body).fetch('response_code')
-
-      if response_code == 0
-        request
-      else
-        throw RequestError, response_code
-      end
-    end
   end
 end
