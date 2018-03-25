@@ -32,4 +32,20 @@ RSpec.describe MusicCast::SetPower do
       end
     end
   end
+
+  describe '#enable_auto_standby' do
+    context 'successfully enables auto standby', :vcr do
+      it 'returns faraday response' do
+        expect(set_power.enable_auto_standby).to be_a(Faraday::Response)
+      end
+    end
+  end
+
+  describe '#disable_auto_standby' do
+    context 'successfully disables auto standby', :vcr do
+      it 'returns faraday response' do
+        expect(set_power.disable_auto_standby).to be_a(Faraday::Response)
+      end
+    end
+  end
 end
