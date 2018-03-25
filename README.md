@@ -18,9 +18,13 @@ Or install it yourself as:
 
     $ gem install music_cast
 
-## Configuration
+## Prerequisites
 
 For the HTTP API to function correctly in an integrated system, the MusicCast devices must be on a fixed or bound IP Address. To avoid network loops through the wireless “extend” functionality of MusicCast products you should set the device to wired or wireless only - through the web GUI on the MusicCast device:
+
+![screen shot 2018-03-25 at 22 22 48](https://user-images.githubusercontent.com/666397/37880091-294978fc-307b-11e8-8985-3ee4e3f11fc6.png)
+
+## Configuration
 
 The configuration options can be set by using the `configure` helper
 
