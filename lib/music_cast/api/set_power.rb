@@ -8,6 +8,10 @@ module MusicCast
       make_request('standby')
     end
 
+    def toggle
+      make_request('toggle')
+    end
+
     private
 
     def make_request(power)

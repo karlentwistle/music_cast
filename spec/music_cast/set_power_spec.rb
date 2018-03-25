@@ -24,4 +24,12 @@ RSpec.describe MusicCast::SetPower do
       end
     end
   end
+
+  describe '#toggle' do
+    context 'successfully toggles the speaker power state', :vcr do
+      it 'returns faraday response' do
+        expect(set_power.toggle).to be_a(Faraday::Response)
+      end
+    end
+  end
 end
