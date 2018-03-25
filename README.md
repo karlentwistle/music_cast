@@ -46,11 +46,11 @@ ip_address # The static IP address of your speaker
 
 ```ruby
 power = MusicCast::SetPower.new
-power.on       # Power on
-power.standby  # Standby
-power.toggle   # Power Toggle
-power.enable_auto_standby  # Enable Auto Power Standby
-power.disable_auto_standby # Disable Auto Power Standby
+power.on                    # Power on
+power.standby               # Standby
+power.toggle                # Power Toggle
+power.enable_auto_standby   # Enable Auto Power Standby
+power.disable_auto_standby  # Disable Auto Power Standby
 ```
 
 ### Volume Commands
