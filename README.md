@@ -44,6 +44,8 @@ ip_address # The static IP address of your speaker
 
 ### Power Functions
 
+Set power status and enable/disable auto-standby
+
 ```ruby
 power = MusicCast::SetPower.new
 power.on                    # Power on
@@ -55,6 +57,8 @@ power.disable_auto_standby  # Disable Auto Power Standby
 
 ### Volume Commands
 
+Set sound volume level
+
 ```ruby
 volume = MusicCast::SetVolume.new
 volume.to(11)         # Set volume to n valid range 0..100
@@ -65,6 +69,8 @@ volume.decrement(10)  # Decrement volume by n steps
 ```
 
 ### Mute
+
+Enable or disable sound mute
 
 ```ruby
 mute = MusicCast::SetMute.new
