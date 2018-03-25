@@ -8,12 +8,20 @@ module MusicCast
       make_request("main/setVolume?volume=#{value.to_i}")
     end
 
-    def increment
-      make_request("main/setVolume?volume=up")
+    def increment(step=nil)
+      if step
+        make_request("main/setVolume?volume=up&step=#{step.to_i}")
+      else
+        make_request('main/setVolume?volume=up')
+      end
     end
 
-    def decrement
-      make_request("main/setVolume?volume=down")
+    def decrement(step=nil)
+      if step
+        make_request("main/setVolume?volume=down&step=#{step.to_i}")
+      else
+        make_request('main/setVolume?volume=down')
+      end
     end
   end
 end
