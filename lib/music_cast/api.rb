@@ -26,5 +26,6 @@ module MusicCast
   end
 end
 
+require_relative 'api/set_mute'
 require_relative 'api/set_power'
 require_relative 'api/set_volume'
