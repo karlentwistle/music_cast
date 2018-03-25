@@ -1,7 +1,7 @@
 module MusicCast
   class SetVolume < API
     def to(value)
-      unless (0..100).include?(value)
+      unless (0..100).include?(value.to_i)
         raise RequestError, "value #{value} out of bounds 0..100"
       end
 
