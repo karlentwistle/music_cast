@@ -1,6 +1,6 @@
 # MusicCast
 
-Ruby Control System for Yamaha MusicCast
+Ruby Control System for Yamaha MusicCast speakers
 
 ## Installation
 
