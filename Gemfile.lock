@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    music_cast (0.2.0)
+    music_cast (0.3.0)
       faraday (~> 0.14.0)
 
 GEM
