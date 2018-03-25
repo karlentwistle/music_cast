@@ -34,6 +34,20 @@ RSpec.describe MusicCast::SetVolume do
       end
     end
   end
+
+  describe '#increment' do
+    context 'successfully increases the speaker volume', :vcr do
+      it 'returns faraday response' do
+        expect(set_volume.increment).to be_a(Faraday::Response)
+      end
+    end
+  end
+
+  describe '#decrement' do
+    context 'successfully decreases the speaker volume', :vcr do
+      it 'returns faraday response' do
+        expect(set_volume.decrement).to be_a(Faraday::Response)
+      end
+    end
+  end
 end
-
-
