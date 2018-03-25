@@ -42,7 +42,7 @@ ip_address # The static IP address of your speaker
 
 ## Usage
 
-This gem is intended to be a thin wrapper around the existing `YamahaExtendedControl/v1` API. The class structures are influenced by the existing API structure.
+This gem is intended to be a thin wrapper around the existing `YamahaExtendedControl/v1` API. The class structures are influenced by the existing API structure. This is a list of all the functions that can currently be performed with this gem.
 
 ### Power Functions
 
