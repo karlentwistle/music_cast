@@ -1,10 +1,8 @@
 PATH
   remote: .
   specs:
-    music_cast (0.1.0)
+    music_cast (0.2.0)
       faraday (~> 0.14.0)
-      vcr (~> 4.0)
-      webmock (~> 3.3)
 
 GEM
   remote: https://rubygems.org/
@@ -50,6 +48,8 @@ DEPENDENCIES
   music_cast!
   rake (~> 10.0)
   rspec (~> 3.0)
+  vcr (~> 4.0)
+  webmock (~> 3.3)
 
 BUNDLED WITH
    1.16.1
