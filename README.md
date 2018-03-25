@@ -1,6 +1,6 @@
 # MusicCast
 
-Control System for Yamaha MusicCast written in Ruby
+Ruby Control System for Yamaha MusicCast
 
 ## Installation
 
