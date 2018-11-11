@@ -1,0 +1,32 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://192.168.0.144/YamahaExtendedControl/v1/main/getStatus
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Network_Module/1.0 (YSP-1600)
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '255'
+    body:
+      encoding: UTF-8
+      string: '{"response_code":0,"power":"on","volume":57,"mute":false,"max_volume":100,"input":"tv","distribution_enable":true,"sound_program":"game","clear_voice":false,"subwoofer_volume":-6,"link_control":"standard","link_audio_delay":"audio_sync","disable_flags":0}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 00:18:28 GMT
+recorded_with: VCR 4.0.0
