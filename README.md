@@ -51,6 +51,7 @@ Get device status
 ```ruby
 status = MusicCast::GetStatus.new
 status.to_json # Current status as JSON
+status.to_hash # Current status as Hash
 ```
 
 ### Power Functions

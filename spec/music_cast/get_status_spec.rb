@@ -30,4 +30,26 @@ RSpec.describe MusicCast::GetStatus do
       end
     end
   end
+
+  describe '#to_hash' do
+    context 'successfully returns device info', :vcr do
+      it 'returns json response' do
+        expect(get_status.to_hash).to eql({
+          "response_code" => 0,
+          "power" => "on",
+          "volume" => 57,
+          "mute" => false,
+          "max_volume" => 100,
+          "input" => "tv",
+          "distribution_enable" => true,
+          "sound_program" => "game",
+          "clear_voice" => false,
+          "subwoofer_volume" => -6,
+          "link_control" => "standard",
+          "link_audio_delay" => "audio_sync",
+          "disable_flags" => 0
+        })
+      end
+    end
+  end
 end
