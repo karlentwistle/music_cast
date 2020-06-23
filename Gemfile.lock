@@ -9,7 +9,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    byebug (10.0.1)
+    byebug (10.0.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     diff-lcs (1.3)
