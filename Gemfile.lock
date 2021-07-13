@@ -43,7 +43,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16)
+  bundler (~> 2.1)
   byebug (~> 10.0, >= 10.0.1)
   music_cast!
   rake (~> 13.0)
@@ -52,4 +52,4 @@ DEPENDENCIES
   webmock (~> 3.3)
 
 BUNDLED WITH
-   1.17.2
+   2.1.4
