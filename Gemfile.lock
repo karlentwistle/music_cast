@@ -20,7 +20,7 @@ GEM
     hashdiff (1.1.0)
     multipart-post (2.0.0)
     public_suffix (5.0.4)
-    rake (13.1.0)
+    rake (13.2.0)
     rexml (3.2.6)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
